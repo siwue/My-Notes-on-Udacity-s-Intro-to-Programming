@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<title>Simon W&uuml;thrich's Student Notes</title>
+    	<link rel="stylesheet" type="text/css" href="style.css">
+ 	</head>
+  		<article>
+	  		<h1 id="my-notes">My Notes</h1>
+	  			<section>
+	  				<h2>Hey there, and welcome to my website.</h2>
+		  			<p>
+		  				This documents wraps up my insights and learnings from the udacity nanodegree
+		  			 	<a href="https://www.udacity.com/course/intro-to-programming-nanodegree--nd000">Intro to Programming</a>.<br>
+		  			 	I've chosen a systematic approach to structuring the knowledge I've acquired during the course.
+		  			 	As you can see in the table of contents, every chapter consists of the same subsections: 
+		  			 	<em>Introduction</em>, <em>Concepts</em>, <em>Tips</em>, and <em>More</em>:
+	  			 	</p>
+	  			 	<!--I have indented these *long* <li> elements for better readability.-->
+	  			 	<ul>
+	  			 		<li>
+	  			 			<em>Introduction</em> will tell you what the chapter is all about.
+  			 			</li>
+	  			 		<li>
+	  			 			<em>Concepts</em> will introduce you to the fundamental concepts of the subject.
+	  			 			Understanding these concepts is vital to understanding the subject as a whole.
+	  			 		</li>
+	  			 		<li>
+	  			 			<em>Tips</em> will provide you with easy to understand and memorize insights
+	  			 			that will help you to avoid the most common mistakes.
+  			 			</li>
+  			 			<li>
+  			 				<em>More</em> will provide you with a selection of links to useful ressources like apps
+	  			 			and further reading – or videos that dive deeper into the matter.
+  			 			</li>
+	  			 	</ul>
+	  			 	<p>
+	  			 		These are the topics you are going to find in the document. You can click on the links to jump
+	  			 		directly to the section you're interested in:
+			 		</p>
+		  			 	<!--the following line adds a dynamic ToC, using jquery-->
+					<div class="all-chapters"></div>
+						<!--end of ToC-->
+					<p>
+						<span class="hat-tip"><b>Hat Tip</b>: This ToC is based on a post by 
+						<a href="https://twitter.com/chriscoyier">Chris Coyer</a>. You can find the article 
+						<a href="https://css-tricks.com/automatic-table-of-contents/">here</a>.</span>
+					</p>
+				</section>
+				<section>
+				<h2 id="make-a-webpage">Make a Webpage</h2>
+					<p>
+						This chapter will introduce you to the basics of making a webpage.
+					</p>
+					<section>
+						<h3 id="basics-of-the-web-and-html">Basics of the Web and HTML</h3>
+							<h4 id="basics-of-the-web-and-html-intro">Introduction</h4>
+								<div class="introduction">
+									<p>
+										The World Wide Web is a huge network of computers, that people use to access vast amounts
+										of informantion. When somebody wants to access a document, he usually uses a browser to 
+										request the desired information from a server. After having downloaded the document
+										from the server, the browser will render the contents of said document.
+									</p>
+								</div>
+							<h4 id="basics-of-the-web-and-html-concepts">Concepts</h4>
+								<div class="concept">
+									<h5>1. HTTP</h5>
+										<p>
+											When browsers communicate with servers, they use a protocoll called 
+		            						<a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a>. 
+		            						HTTP is an acronym for Hyper Text Transfer Protocol.
+		            					</p>
+		            				<h5>2. HTML</h5>
+		            					<p>
+		            						The web consist of documents written in a language called 
+		            						<a href="https://en.wikipedia.org/wiki/HTML">HTML</a>.
+		            						HTML is an acronym for Hyper Text Markup Language. 
+		           					 		The code of an HTML document determines <em>what</em> a user will see (<b>content</b>), 
+		            						and <em>how</em> he will see it (<b>markup</b>).
+		            					</p>
+		        					<h6>2.1. Elements</h6>
+		        						<p>
+		        							The contents of an HTML document are being marked up using <b>tags</b> and <b>attributes</b>. 
+		      								Tags and attributes and the contents they refer to are called <b>elements</b>.<br>
+		      								e.g. <code>&lt;tag&gt;content&lt;/tag&gt;</code>.
+		  								</p>
+		        					<h6>2.2. Tags</h6>
+		        						<p>
+		        							Tags are being used to tag elements as such. There are two different kinds of tags: 
+		        							regular tags and void tags.
+	        							 </p>
+		      							<ul>
+		        							<li>
+		          								<b>Regular tags</b>. They require an <b>open tag and a closing tag</b>.<br>
+		          								Examples of tags are the <b><a href="http://www.w3schools.com/tags/tag_b.asp">bold</a></b>, 
+		      									or <em><a href="http://www.w3schools.com/tags/tag_em.asp">emphasis</a></em> tag.<br>
+		        							</li>
+		        							<li>
+		              							<b>Void tags</b> do <em>not</em> require a closing tag. <br>
+		              							Examples of void tags is the <a href="http://www.w3schools.com/tags/tag_br.asp">line break</a>.
+		        							</li>
+										</ul>
+		      						<h6>2.3. Attributes</h6>
+		      							<p>
+		      								Attributes are used to provide additional information about HTML elements. Two examples:
+	      								</p>
+		          						<ul>
+		            						<li>
+		              							The <b><a href="http://www.w3schools.com/tags/tag_img.asp">image</a> tag</b>, 
+		              							a void tag, provides the source of an image and a description that is being 
+		              							rendered if the image cannot be displayed.<br>
+		              							Exaple: 
+		              							<code>&lt;img src=&quot;https://pbs.twimg.com/media/CNzpXIUXAAAXSKn.jpg:large&quot; alt=&quot;
+		              							A screenshot I tweeted, of Siri giving me a hint.&quot;&gt;</code>
+		        							</li>
+		            						<li>
+		              							The <a href="http://www.w3schools.com/html/html_links.asp">anchor</a> tag, 
+		              							a regular tag, that's being used to link HTML documents.
+		            						</li>
+		          						</ul>
+		          					<h5>3. Stupid Computers</h5>
+		          						<p>
+		          							Always remember: <b>Computers are stupd</b> – they always interpret your instructions 
+		          							literally. Therefore a typo in your code will break your document or program.
+		        						</p>
+		            			</div>
+		    					<div class="tip">
+		    						<h4 id="basics-of-the-web-and-html-tips">Tips</h4>
+		    							<h5 class="tip">Mind the Closing Tag</h5>
+		    						<p>
+		    							Keep in mind: if you forget the closing tag, a browser won't be able to display 
+		              					your content correctly.
+		          					</p>
+		          					<h5 class="tip">Inline vs. Block</h5>
+		          					<p>
+							          	<b>Block elements</b>, such as <code>&lt;p&gt;&lt;/p&gt;</code>, 
+							          	<code>&lt;div&gt;&lt;/div&gt;</code>, or <code>&lt;form&gt;&lt;/form&gt;</code> 
+							          	create a invisible box around the content within them; inline elements don't. 
+							          	Learn more about block elements <a href="http://www.w3schools.com/html/html_blocks.asp">here</a>.
+		        					</p>
+		    					</div>
+							<h4 id="basics-of-the-web-and-html-more">More</h4>
+								<div class="linkbox-tools">
+									<h5>1. Tools</h5>
+										<p>
+											There are some helpful tools for you to learn coding HTML: <b>Codepen</b>, 
+											<b>Scratchpad</b>, and <b>Sublime Text</b>. Depending on the task at hand
+											you will use one of these. Here's what you are going to use them for.
+										</p>
+										<div class="comparison">
+											<div class="app">
+												<h6>1.1. Scratchpad</h6>
+												<p>
+													<b>Functionality</b><br>
+													Scratchpad is an instant HTML and CSS editor created by 
+													<a href="https://twitters.com/nbashaw">@nbashaw</a>.
+													It provides you with an easy way to write HTML and CSS and is fairly easy to understand.
+												</p>
+												<p>
+													<b>Speed</b><br>
+													It will render the code you enter in the left pane in real time in the right pane.
+													Therefore you see immediately how changes to the code affect the style and structure 
+													of your webpage.
+												</p>
+												<p>
+													<b>Shareability</b><br>
+													It is relatively easy to share the code you've created. However it does not match 
+													codepen's focus on shareability.
+												</p>
+												<p>
+													<b>Power</b><br>
+													Scratchpad is a comparably lean and fast tool. It therefore lacks the functionality
+													of a powerful editor like Sublime Text.
+												</p>
+												<p>
+													You can find Scratchpad <a href="http://scratchpad.io">here</a>.
+												</p>
+											</div>
+											<div class="app">
+												<h6>1.2. Codepen</h6>
+												<p>
+													<b>Functionality</b><br>
+													Codepen, just like Scratchpad, is an instant editor. It is a bit more powerful and
+													has a strong focus on sharing and collaborating on code. It has been founded by:
+												</p>
+												<!--I have NOT indented the following *short* <li> elements.-->
+												<ul>
+													<li><a href="http://twitter.com/alexquez">@alexquez</a></li>
+													<li><a href="http://twitter.com/timsabat">@timsabat</a></li>
+													<li><a href="http://twitter.com/chriscoyier">@chriscoyier</a></li>
+												</ul>
+												<p>
+													<b>Speed</b><br>
+													Just like Scratchpad Codepen will render your code in real time.
+												</p>
+												<p>
+													<b>Shareability</b><br>
+													Codepen is the perfect tool to conveniently share your code with the world.
+												</p>
+												<p>
+													<b>Power</b>
+													Codepen is more powerful than Scratchpad. It is easier to edit CSS, and you can 
+													even add Javascript to your code.
+												</p>
+												<p>
+													You can find Codepen <a href="http://codepen.io">here</a>.
+												</p>
+											</div>
+											<div class="app">
+												<h6>1.3. Sublime Text</h6>
+												<p>
+													<b>Functionality</b><br>
+													Sublime Text is way more powerful than Codepen or Scratchpad, and also more 
+													complicated for beginners to understand. It doesn't run in a browser, but
+													as a stand alone application on your computer.
+												</p>
+												<p>
+													<b>Speed</b><br>
+													Sublime Text doesnt offer real time rendering of HTML and CSS as Codepen and 
+													Scratchpad do. One way to see your code in action is to open the respective
+													HTML file in a browser. (Keep in mind that you need to keep accompanying
+													CSS and JS files in the same folder as the HTML files for the page to render
+													correctly.)
+												</p>
+												<p>
+													<b>Shareability</b><br>
+													It's a bit more complicated to share your code with Sublime Text, as it
+													doesn't run in the cloud, but on your machine. So if you wanna share your
+													code with the world you will need to upload it to the web first.
+												</p>
+												<p>
+													<b>Power</b>
+													Besides HTML, Java Script and CSS you can use it to write software in 
+													powerful programming languages like Python, Ruby, C++ and the likes. It
+													offers powerful features that make the life of a programmer easier. Examples: 
+													Auto-complete, or advanced and customizable syntax highlighting.
+												</p>
+												<p>
+													You can get Sublime Text 3 (which is currently in Beta) or free 
+													<a href="http://www.sublimetext.com/3">here</a>. If you intend using it for an 
+													extended period of time, consieder supporting the developers by buying a license.
+												</p>
+											</div>
+										</div>
+								</div>
+								<div class="linkbox-more">
+									<h5>2. Reading</h5>
+										<p>
+											Check out these resources to learn more about the topics covered so far:
+										</p>
+								        <!--For better readybility, these *long* <li> elements are indented.-->
+								        <ul>
+								          <li>
+								          	Block Elements (<a href="http://www.w3schools.com/html/html_blocks.asp">w3schools.com</a>)
+								          </li>
+								          <li>
+								          	Links (<a href="http://www.w3schools.com/html/html_links.asp">w3schools.com</a>)
+								          </li>
+								          <li>
+								          	Tags (<a href="http://www.w3schools.com/tags/">w3schools.com</a>)
+								          </li>
+								          <li>
+								          	HTML (<a href="https://en.wikipedia.org/wiki/HTML">en.wikipedia</a>)
+								          </li>
+								          <li>
+								          	HTTP (<a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">en.wikipedia</a>)
+								          </li>
+								        </ul>
+						    	</div>
+		    	</section>
+				<section>
+					<h3 id="add-style-and-structure-to-your-webpage">Add Style and Structure to your Wbapage</h3>
+						<h4 id="add-style-and-structure-to-your-webpage-introduction">Introduction</h4>
+							<p>
+								In this chapter you will learn how you can use HTML to add structure and CSS to add style to 
+								your Webpage. You will learn how to <b>avoid repetition</b> in your code and why 
+								<b>order matters</b>.
+							</p>
+						<h4 id="add-style-and-structure-to-your-webpage-concepts">Concepts</h4>
+							<div class="concept">
+								<h5>1. DOM</h5>
+									<p>
+										<b>DOM</b> stand for Document Object Model. The DOM is a programming interface 
+										for XML	and HTML documents. It provides a structural (tree like) representation 
+										of a document. It thus defines how the structure can be accessed and modified by
+										programs (scripts).
+									</p>
+									<p>
+										Every HTML document has the exact same basic structure:
+									</p>
+									<!--Long <li> elements, therefore indented ;) -->
+									<ul>
+										<li>
+											The <code>&lt;!DOCTYPE html&gt;</code> declaration, defining the document
+											type to be HTML.<br>
+										</li>
+										<li>
+											The <code>&lt;html&gt;</code>-tag, enclosing the text that describes the 
+											HTML document.<br>
+										</li>
+										<li>
+											The <code>&lt;head&gt;</code>-tag enclosing information about the document.<br>
+										</li>
+										<li>
+											The <code>&lt;body&gt;</code>-tag, enclosing the text that describes the 
+											visible parts of the document.<br>
+										</li>
+									</ul>
+									<p>
+										This is the structure of a very simple webpage.<br>
+										<img src="151121_udacity_notes_simple_dom_structure.png" alt="tree diagram of a basic webpage">
+									</p>
+			        			<h5>2. CSS</h5>
+			        				<p>			        				
+				        				The <b>look</b> of a web page is determined by a <b>CSS file</b>. CSS is an 
+				        				abbreviation for <b>Cascading Style Sheets</b>. It allows you to define the
+				        				style of elements in your HTML-document.
+			        				</p>
+			        				<p>
+			        					To understand how CSS works, you need to understand the following concepts:
+		        					</p>
+		        					<!--Long <li>s-->
+		        					<ul>
+		        						<li>
+		        							<b>Rule</b>: You can use rules to describes the value, that	a certain 
+		        							attribute should take.
+		        						</li>
+		        						<li>
+		        							<b>Class</b>: A <code>&lt;class&gt;</code> refers to a group of elements 
+		        							that can be styled together. (Class names must never contain punctuation!)
+		        						</li>
+		        						<li>
+		        							<b>ID</b>: An <code>&lt;id&gt;</code> is a unique identifier for an element
+		        							in an HTML document.
+		        						</li>
+		        						<li>
+		        							<b>Selector</b>: You can use selectors (a string) to identify or target 
+		        							the elements that are assigned to a <code>&lt;class&gt;</code> or 
+		        							<code>&lt;id&gt;</code> attribute in a HTML document.
+		        						</li>
+		        						<li>
+		        							<b>Class selectors</b>: You can use class selectors to apply style to 
+		        							certain elements, for example <code>&lt;h1&gt;</code>-headings.
+		        						</li>
+		        						<li>
+		        							<b>Declaration</b>: The line of code that sets 
+		        							<code>&lt;background-color: black&gt;;</code>, is a <b>declaration</b>;
+		        							<code>&lt;background-color&gt;</code> is a <b>property</b>, and 
+		        							<code>&lt;black&gt;</code> is the <b>value</b> of said property.
+		        						</li>
+		        						<li>
+		        							<b>Cascading</b>: Cascading (or <b>inheritance</b>) means, that rules apply 
+		        							not only to the specified element, but also to its child elements. If a child
+		        							element has multiple overlapping rules, the more specific rule takes effect. 
+		        							Inheritance allows you to write less code, thus save bandwith which translates
+		        							into a webpage that loads faster.<br>
+		        							Keep in mind: inheritance applies to text-related elements, NOT box elements.
+		        						</li>
+		        					</ul>
+			        				<p>
+			        					There are three different ways to apply css style to elements in your HTML document:
+		        					</p>
+		        					<ol>
+		        						<li>
+		        							You can define the style inline with your HTML code. This is prone to mistakes
+		        							and generates a lot of repetitive code – in other words: it's a very bad way
+		        							to style your document. 
+		        						</li>
+		        						<li>
+		        							You can define the styles in the <code>&lt;head&gt;</code> section of your 
+		        							document. This works fine for small websites.
+		        						</li>
+		        						<li>
+		        							The proper way to apply style to your document is by creating a dedicated
+		        							CSS file. If you do this, you need to place a link in the 
+		        							<code>&lt;head&gt;</code> section of your document.
+		        						</li>
+		        					</ol>
+		        					<p>
+				        				The really cool thing abour CSS is: you can define the style of all instances of 
+				        				a particular element. For example, instead of having to style each and every instance 
+				        				of an <code>&lt;h1&gt;</code>-element, you can define a style that applies to all 
+				        				<code>&lt;h1&gt;</code>-elements. In other words, CSS allows you to 
+				        				<b>avoid repetition</b>.
+				        			</p>
+		       					<h5>3. Boxes Everywhere</h5>
+						        	<p>
+						          		Everything on the web is wrapped in a <b>box</b>. When you structure a webpage, 
+						          		you essentially	think about how an where on a given <b>grid</b> you want to 
+						          		place your boxes.
+						        	</p>
+						        	<p>
+						          		When you look at a simple webpage and want to figure out its structure, 
+						          		it's best to do a screenshot start of it and then draw boxes around the
+						          		various elements. Start with the biggest boxes and progress to the smaller ones.
+						          		You can find an example <a href="151018_boxes_everywhere.pdf">here</a>.
+					        		</p>
+						        	<p>
+						          		If you want to create a box, you can use block elements, like the 
+						          		<code>&lt;div&gt;</code>-tag. After having created the structure of your document, 
+						          		you can attribute style to your boxes. You can do this by adding attributes to 
+						          		your tags or by seting up a CSS file, that defines the style of your various boxes.
+						        	</p>
+						        	<p>
+						        		Boxes consist of four different areas:
+					        		</p>
+						        		<ul>
+						        			<li>
+						        				<b>Content</b>: This contains the image or text that is appearing on the 
+						        				website. It sits at the center of the box and you can think of the other 
+						        				areas as the content's protecting layers.
+						        			</li>
+						        			<li>
+						        				<b>Padding</b>: The padding clears an area around the content. (It's affectd by 
+						        				the <code>&lt;background color&gt;</code> of the box.)
+						        			</li>
+						        			<li>
+						        				<b>Border</b>: The border goes around tha padding. It is ingherited by the
+						        				<code>&lt;color&gt;</code> of the box.
+						        			</li>
+						        			<li>
+						        				<b>Margin</b>: The margin clears the area around the border. It is completely
+						        				transparent. It determines the space between boxes.
+						        			</li>
+						        		</ul>
+						        	<p>
+						        		CSS provides you with a useful model to work with boxes: css style 
+						        		<code>&lt;box-sizing: border-box&gt;</code>. This allows you to set a max width to 
+						        		your box that will remain the same, no matter how you change 
+						        		<code>&lt;content&gt;</code>, <code>&lt;padding&gt;</code>, or
+						        		<code>&lt;border&gt;</code>.<br>
+						        		You need to remember two things:
+					        		</p>
+					        		<!--Long <li>s-->
+					        		<ol>
+					        			<li>
+					        				<code>&lt;margin&gt;</code> is not included in the size of this size.
+					        			</li>
+					        			<li>
+					        				You need to include browser specific prefixes <code>&lt;-webkit&gt;</code>, 
+					        				<code>&lt;-moz&gt;</code>, and <code>&lt;-ms&gt;</code>to your style for it 
+					        				to work.
+					        			</li>
+					        		</ol>
+				        	</div>
+			        		<div class="tip">
+			        		<h4 id="add-style-and-structure-to-your-webpage-tips">Tips</h4>
+			        			<h5 class="tip">Commenting</h5>
+			        			<p>
+			        				You can add comments to your code that will be ignored by computers but can be read
+			        				by humans. If you add comments to your code this will allow other programmers (or you) 
+			        				to better understand your code - and thus work with it more efficiently.
+			        			</p>
+			        			<h5 class="tip">Different Browsers, Different Style Sheets</h5>
+			        			<p>
+			        				Always remember: Different browsers use different <b>default style</b> sheets. That means 
+			        				that the very same code might look different in different browsers if you don't define 
+			        				proper style sheets covering all relevant elements of your HTML document.
+			        			</p>
+			        			<h5 class="tip">Flexbox</h5>
+			        			<p>
+			        				This is a really useful model when it comes to ensuring that your website looks good 
+			        				on screens (size/resolution). Learn more about flexbox 
+			        				<a href="http://www.w3.org/TR/css3-flexbox/">here</a>.
+			        			</p>
+			        			<h5 class="tip">DOM</h5>
+			        			<p>
+									If you wanna learn more about the DOM, check out this 
+									<a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">article</a>
+									on the Mozilla Developer Network.
+								</p>
+								<div class="hat-tip">
+									<b>Hat Tip:</b> Reviewer Stacy shared this helpful ressource with me.
+								</div>
+			        		</div>
+		        		</section>
+	        		</section>
+		</article>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="toc.js"></script>	
+</body>

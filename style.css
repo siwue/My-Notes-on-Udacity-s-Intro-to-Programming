@@ -1,0 +1,121 @@
+html {
+  font-family: sans-serif !important
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1080px;
+  margin: 2px auto;
+}
+
+a:link {
+  color: #3436B7;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #3436B7;
+}
+
+a:hover {
+  color: #1216FF;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #0000FF;
+}
+
+h1 {
+  font-size: 24px;
+  background-color: rgb(255, 239, 170);
+  text-align: center;
+  margin: 4px;
+  padding: 4px;
+}
+
+h2 {
+  font-size: 18px;
+  background-color: rgb(187, 225, 255);
+  text-align: center;
+  margin: 4px;
+  padding: 4px;
+}
+
+h3 {
+  font-size: 16px;
+  background-color: rgb(181, 255, 201);
+  text-align: center;
+  margin: 4px;
+  padding: 4px;
+}
+
+h4 {
+  font-size: 14px;
+  margin: 4px;
+  padding: 4px;
+}
+
+h5 {
+  font-size: 16px;
+  background-color: rgb(181, 255, 201);
+  text-align: center;
+  margin: 4px;
+  padding: 4px;
+}
+
+p {
+  margin: 4px;
+  padding: 4px;
+}
+
+div {
+  font-size: 12px;
+  margin: 4px;
+  padding: 4px;
+}
+
+img {
+  background-color: white;
+  border: 5px;
+  padding: 25px;
+  max-width: 90%;
+  margin: 25px;
+  text-align: center;
+}
+
+.hat-tip {
+  font-size: 10px;
+  font-style: italic;
+}
+
+.table-of-contents {
+  font-size: 12px;
+  margin: 4px !important;
+}
+
+.tip {
+  background-color: rgb(255, 196, 199);
+  color: black;
+  padding: 2px;
+  border: 4px;
+  margin: 2px;
+  text-align: center;
+}
+
+.app {
+  margin: 8px;
+  background-color: rgb(227, 213, 255);
+  padding: 4px;
+  max-width: 330px;
+}
+
+.comparison {
+  display: inline-flex;
+}
